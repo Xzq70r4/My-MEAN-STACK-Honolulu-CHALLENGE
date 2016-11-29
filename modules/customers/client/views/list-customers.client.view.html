@@ -13,7 +13,8 @@
         <span ng-if="customer.user" ng-bind="customer.user.displayName"></span>
         <span ng-if="!customer.user">Deleted User</span>
       </small>
-      <h4 class="list-group-item-heading" ng-bind="customer.name"></h4>
+      <h4 class="list-group-item-heading" ng-bind="customer.firstName"></h4>
+      <h4 class="list-group-item-heading" ng-bind="customer.surname"></h4>
     </a>
   </div>
   <div class="alert alert-warning text-center" ng-if="vm.customers.$resolved && !vm.customers.length">
