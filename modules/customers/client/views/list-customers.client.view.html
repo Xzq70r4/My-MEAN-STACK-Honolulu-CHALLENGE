@@ -4,8 +4,31 @@
     <h1>Customers</h1>
   </div>
 
+  <div class="row">
+
+    <div class="col-xs-12 col-sm-8">
+      <div class="input-group input-group-lg">
+        <input type="text" class="form-control"  ng-model="searchText">
+        <span class="input-group-btn" >
+          <button class="btn btn-default" type="button">Go!</button>
+        </span>
+      </div>
+    </div>
+
+    <div class="col-xs-12 col-sm-4 text-center">
+      <button type="button" class="btn btn-success text-center">
+          <i class="glyphicon glyphicon-user"></i><br>
+          New Customer
+      </button>
+    </div>
+
+  </div>
+
+  <br>
+  <br>
+
   <div class="list-group">
-    <div class="col-sx-6 col-sm-4" ng-repeat="customer in vm.customers">
+    <div class="col-sx-6 col-sm-4" ng-repeat="customer in vm.customers | filter:searchText">
 
       <a ui-sref="customers.view({ customerId: customer._id })"
         class="list-group-item">
@@ -13,6 +36,7 @@
         <h4 class="cust-list text-center">
           <i class="glyphicon glyphicon-user"></i>
         </h4>
+
         <div class="row">
 
           <div class="col-xs-10 col-xs-offset-1">
