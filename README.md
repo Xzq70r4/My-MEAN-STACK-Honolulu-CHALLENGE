@@ -1,6 +1,10 @@
+This is my implementation on [Honolulu-Challenge](http://www.bossable.com/555/mean-app-challenge/) using Mean.js.
+
 node-version: v6.9.2
+
 meanjs-version: 0.4.2,
-[Honolulu-Challenge](http://www.bossable.com/555/mean-app-challenge/)
+
+###MEAN.JS Documentation
 [![MEAN.JS Logo](http://meanjs.org/img/logo-small.png)](http://meanjs.org/)
 
 [![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/meanjs/mean?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
